@@ -16,7 +16,7 @@
 <br>
 
 <p align="center">
-  <strong>Overview</strong>
+  <h2 align="center">😼 What is this?</h2>
 </p>
 
 <p align="center">
@@ -42,7 +42,7 @@
 
 ---
 
-<p align="center"><strong><i>Digit Showcase</i></strong></p>
+<p align="center"><h2 align="center">✨ Digit Gallery</h2></strong></p>
 <p align="center">
   <img width="40" height="89" alt="0" src="https://github.com/user-attachments/assets/d0b116fe-8fa8-4bda-aa57-2576653407c9" />
   <img width="40" height="89" alt="1" src="https://github.com/user-attachments/assets/27cf5157-a926-4437-8ea5-7e2f706dd5f8" />
