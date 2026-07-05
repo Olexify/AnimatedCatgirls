@@ -1,11 +1,11 @@
 {
   "counterKey": "counter:Olexify",
-  "digits": 6,
+  "digits": 5,
   "style": {
     "opacity": 0.85,
-    "brightness": 0.68,
+    "brightness": 0.9,
     "contrast": 1.25,
-    "saturate": 0.8,
+    "saturate": 1.1,
     "scale": 1,
     "spacing": 0,
     "offsetY": 0,
