@@ -1,0 +1,27 @@
+{
+  "digits": 6,
+  "opacity": 0.85,
+  "brightness": 0.65,
+  "contrast": 1.4,
+  "saturate": 0.75,
+
+  "countMode": "strict",
+  "cooldownSeconds": 0,
+
+  "scale": 1,
+  "spacing": 0,
+  "offsetY": 0,
+
+  "animationSpeed": 1,
+  "animationDelay": 0,
+  "stagger": 0.08,
+  "loop": true,
+
+  "shadowOpacity": 0.2,
+  "shadowBlur": 1.5,
+  "shadowOffsetX": 0,
+  "shadowOffsetY": 1,
+
+  "bgOpacity": 0,
+  "rounded": 0
+}
