@@ -33,6 +33,27 @@ You host it yourself on Vercel, store the count in Upstash Redis, and tweak ever
 
 ---
 
+<h2 align="center">✨ Digit Gallery</h2>
+
+<p align="center">
+  <img width="40" height="89" alt="0" src="https://github.com/user-attachments/assets/d0b116fe-8fa8-4bda-aa57-2576653407c9" />
+  <img width="40" height="89" alt="1" src="https://github.com/user-attachments/assets/27cf5157-a926-4437-8ea5-7e2f706dd5f8" />
+  <img width="40" height="89" alt="2" src="https://github.com/user-attachments/assets/a299c41a-bdf8-4546-91a4-31bfc5584896" />
+  <img width="40" height="89" alt="3" src="https://github.com/user-attachments/assets/338f54c8-62be-4283-bcdc-04d634262598" />
+  <img width="40" height="89" alt="4" src="https://github.com/user-attachments/assets/f09f6a38-1d75-45a3-9a80-945632e2797e" />
+  <img width="40" height="89" alt="5" src="https://github.com/user-attachments/assets/a55ccb2d-a7e1-4ab1-8a17-918e52dfd6bb" />
+  <img width="40" height="89" alt="6" src="https://github.com/user-attachments/assets/cd61ec35-48ec-4235-b3dd-9cbc4f3fbbba" />
+  <img width="40" height="89" alt="7" src="https://github.com/user-attachments/assets/191aa33e-b23c-42d0-afa5-9719a6989915" />
+  <img width="40" height="89" alt="8" src="https://github.com/user-attachments/assets/98672b7e-885d-41aa-ab1a-884d4046fb9d" />
+  <img width="40" height="89" alt="9" src="https://github.com/user-attachments/assets/9e3b0ece-51df-4aa2-978e-001a37344b60" />
+</p>
+
+<p align="center">
+  <sub>The 10 animated digit sprites used to build the live counter</sub>
+</p>
+
+---
+
 ## ⚡ Features
 
 * 🐈 Animated digit GIFs (0–9) - bring your own art
@@ -235,8 +256,6 @@ they might as well **wiggle their tails**. 🐾
 
 > "I-it's not like I made an entire self-hosted counter just to flex or anything..." ✨
 
-
-<h2>✨ Digit Gallery</h2>
 
 <p align="center">
   <img width="40" height="89" alt="0" src="https://github.com/user-attachments/assets/d0b116fe-8fa8-4bda-aa57-2576653407c9" />
