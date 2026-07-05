@@ -1,23 +1,40 @@
 <h1 align="center">🐾 AnimatedCatgirls</h1>
 
-<img width="45" height="100" alt="0" src="https://github.com/user-attachments/assets/d0b116fe-8fa8-4bda-aa57-2576653407c9" />
-<img width="45" height="100" alt="1" src="https://github.com/user-attachments/assets/27cf5157-a926-4437-8ea5-7e2f706dd5f8" />
-<img width="45" height="100" alt="2" src="https://github.com/user-attachments/assets/a299c41a-bdf8-4546-91a4-31bfc5584896" />
-<img width="45" height="100" alt="3" src="https://github.com/user-attachments/assets/338f54c8-62be-4283-bcdc-04d634262598" />
-<img width="45" height="100" alt="4" src="https://github.com/user-attachments/assets/f09f6a38-1d75-45a3-9a80-945632e2797e" />
-<img width="45" height="100" alt="5" src="https://github.com/user-attachments/assets/a55ccb2d-a7e1-4ab1-8a17-918e52dfd6bb" />
-<img width="45" height="100" alt="6" src="https://github.com/user-attachments/assets/cd61ec35-48ec-4235-b3dd-9cbc4f3fbbba" />
-<img width="45" height="100" alt="7" src="https://github.com/user-attachments/assets/191aa33e-b23c-42d0-afa5-9719a6989915" />
-<img width="45" height="100" alt="8" src="https://github.com/user-attachments/assets/98672b7e-885d-41aa-ab1a-884d4046fb9d" />
-<img width="45" height="100" alt="9" src="https://github.com/user-attachments/assets/9e3b0ece-51df-4aa2-978e-001a37344b60" />
-
 <p align="center">
-  <img src="https://animated-catgirls.vercel.app/api/counter" width="397" alt="Animated Catgirl Counter" />
+  <i>A self-hosted, animated, config-driven visitor counter for your GitHub profile.</i><br/>
+  Booru-style catgirls holding your visit count. Because static counters are boring.
 </p>
 
 <p align="center">
-A self-hosted, animated, config-driven visitor counter for your GitHub profile.<br/>
-Booru-style catgirls holding your visit count. Because static counters are boring.
+  <img src="https://animated-catgirls.vercel.app/api/counter" width="425" alt="Animated Catgirl Counter" />
+</p>
+
+<p align="center">
+  <sub>Live demo counter powered by Vercel + Upstash Redis</sub>
+</p>
+
+---
+
+<h2 align="center">✨ Digit Gallery</h2>
+
+<p align="center">
+  <img width="45" height="100" alt="0" src="https://github.com/user-attachments/assets/d0b116fe-8fa8-4bda-aa57-2576653407c9" />
+  <img width="45" height="100" alt="1" src="https://github.com/user-attachments/assets/27cf5157-a926-4437-8ea5-7e2f706dd5f8" />
+  <img width="45" height="100" alt="2" src="https://github.com/user-attachments/assets/a299c41a-bdf8-4546-91a4-31bfc5584896" />
+  <img width="45" height="100" alt="3" src="https://github.com/user-attachments/assets/338f54c8-62be-4283-bcdc-04d634262598" />
+  <img width="45" height="100" alt="4" src="https://github.com/user-attachments/assets/f09f6a38-1d75-45a3-9a80-945632e2797e" />
+</p>
+
+<p align="center">
+  <img width="45" height="100" alt="5" src="https://github.com/user-attachments/assets/a55ccb2d-a7e1-4ab1-8a17-918e52dfd6bb" />
+  <img width="45" height="100" alt="6" src="https://github.com/user-attachments/assets/cd61ec35-48ec-4235-b3dd-9cbc4f3fbbba" />
+  <img width="45" height="100" alt="7" src="https://github.com/user-attachments/assets/191aa33e-b23c-42d0-afa5-9719a6989915" />
+  <img width="45" height="100" alt="8" src="https://github.com/user-attachments/assets/98672b7e-885d-41aa-ab1a-884d4046fb9d" />
+  <img width="45" height="100" alt="9" src="https://github.com/user-attachments/assets/9e3b0ece-51df-4aa2-978e-001a37344b60" />
+</p>
+
+<p align="center">
+  <sub>The 10 animated digit sprites used to build the live counter</sub>
 </p>
 
 ***
@@ -26,7 +43,7 @@ Booru-style catgirls holding your visit count. Because static counters are borin
 
 `count.getloli.com` gives you a **static** anime counter.
 
-This gives you an **animated** one — your own catgirl GIFs, your own server, your own rules.
+This gives you an **animated** one - your own catgirl GIFs, your own server, your own rules.
 
 ```txt
 🚀 Loading AnimatedCatgirls.exe...
@@ -43,7 +60,7 @@ You host it yourself on Vercel, store the count in Upstash Redis, and tweak ever
 
 ## ⚡ Features
 
-* 🐈 Animated digit GIFs (0–9) — bring your own art
+* 🐈 Animated digit GIFs (0–9) - bring your own art
 * ⚙️ Everything configurable via `counter.config.json`
 * 🎨 Opacity, brightness, contrast, saturation, shadow, scale, spacing
 * 🔢 Adjustable digit count
@@ -93,7 +110,7 @@ AnimatedCatgirls/
 
 ### 1) Get your digit assets 🎨
 
-You need 10 images or GIFs — one per digit `0`–`9`.
+You need 10 images or GIFs - one per digit `0`–`9`.
 
 Quick way: drag images into any GitHub issue/comment → GitHub gives you stable `user-attachments` URLs.
 
@@ -110,14 +127,14 @@ const DIGITS = {
 
 ### 2) Create Upstash Redis 🗄️
 
-- Go to https://upstash.com → Create Redis DB (free tier)
+- Go to [https://upstash.com](https://upstash.com) → Create Redis DB (free tier)
 - Copy from the **REST API** section:
   - `UPSTASH_REDIS_REST_URL`
   - `UPSTASH_REDIS_REST_TOKEN`
 
 ### 3) Deploy to Vercel ▲
 
-- Go to https://vercel.com/new → Import this repo
+- Go to [https://vercel.com/new](https://vercel.com/new) → Import this repo
 - ⚠️ Set **Framework Preset → Other** (NOT Node.js)
 - Add env vars:
 
@@ -136,7 +153,7 @@ Open:
 https://your-project.vercel.app/api/counter
 ```
 
-If you open `/` you’ll get a 404 — that’s normal. The endpoint is `/api/counter`.
+If you open `/` you’ll get a 404 - that’s normal. The endpoint is `/api/counter`.
 
 ### 5) Embed it in your GitHub profile 🎀
 
@@ -144,7 +161,7 @@ In your `USERNAME/USERNAME` profile README:
 
 ```html
 <p align="center">
-  <img src="https://your-project.vercel.app/api/counter" width="397" />
+  <img src="https://your-project.vercel.app/api/counter" width="425" />
 </p>
 ```
 
@@ -159,19 +176,19 @@ Edit this file, push to GitHub, Vercel redeploys automatically.
 ```json
 {
   "counterKey": "counter:Olexify",
-  "digits": 6,
+  "digits": 7,
   "style": {
-    "opacity": 0.85,
-    "brightness": 0.68,
+    "opacity": 0.8,
+    "brightness": 0.9,
     "contrast": 1.25,
-    "saturate": 0.8,
+    "saturate": 1,
     "scale": 1,
     "spacing": 0,
     "offsetY": 0,
-    "shadowOpacity": 0.18,
-    "shadowBlur": 0.6,
-    "shadowOffsetX": 0,
-    "shadowOffsetY": 1,
+    "shadowOpacity": 0.5,
+    "shadowBlur": 0.65,
+    "shadowOffsetX": 2.5,
+    "shadowOffsetY": 3.5,
     "bgOpacity": 0,
     "rounded": 0,
     "bgColor": "#000000"
@@ -202,29 +219,30 @@ Edit this file, push to GitHub, Vercel redeploys automatically.
 
 | Mode | Behavior |
 |---|---|
-| `strict` | +1 on every request (most aggressive) |
+| `strict` | +1 on every request (default logic, but GitHub caching may hide some updates) |
 | `unique` | +1 per IP per cooldown window |
 | `aggressive` | +`bump` per request |
 
 > 😐 **Counter feels sluggish on GitHub?** GitHub caches/proxies images.  
-> For testing, open `/api/counter` directly in your browser and refresh there.
+> For testing, open `YOUR-PROJECT-NAME.vercel.app/api/counter` directly in your browser and refresh there.
 
 ---
 
-## 🐛 Troubleshooting
+## 👯‍♀️ Troubleshooting
 
 ```txt
-99 little bugs in the counter, 99 little bugs 🎵
-Take one down, redeploy around... still a broken image 🐾
+99 little cats play in the counter, 99 little cats 🎵
+Feed them, they all nap and curl,
+redeploy the page... you get a broken image 🐾
 ```
 
 | Symptom | Fix |
 |---|---|
 | **"No entrypoint found"** | Vercel preset must be **Other**; function must be `api/counter.js` |
 | **500 FUNCTION_INVOCATION_FAILED** | Missing env vars, invalid JSON, or JSON pasted into `.js` → check Vercel logs |
-| **404 on `/`** | Normal — use `/api/counter` |
+| **404 on `/`** | Normal - use `/api/counter` |
 | **Works in browser, broken on GitHub** | GitHub proxy is picky with some SVGs; try Markdown embed `![Counter](URL)` or simplify output |
-| **Count won't increase** | `unique` mode/cooldown active, or caching |
+| **Count won't increase** | use `strict` mode, cooldown=0; the issue is caching |
 
 ---
 
@@ -233,7 +251,7 @@ Take one down, redeploy around... still a broken image 🐾
 Static counters are fine.
 
 But if anime catgirls are going to announce your visitor count,  
-they might as well **move**. 🐾
+they might as well **wiggle their tails**. 🐾
 
 ---
 
