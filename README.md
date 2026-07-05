@@ -1,15 +1,15 @@
 <h1 align="center">🐾 AnimatedCatgirls</h1>
 
 <p align="center">
-  <img src="https://animated-catgirls.vercel.app/api/counter" width="425" alt="Animated Catgirl Counter" />
-</p>
-<p align="center">
-  <sub>Live demo counter powered by Vercel + Upstash Redis(Use Chrome if it doesn't animate on Firefox</sub>
+  <i>A self-hosted, animated, config-driven visitor counter for your GitHub profile.</i><br/>
+  Booru-style catgirls holding your visit count. Because static counters are boring.
 </p>
 
 <p align="center">
-A self-hosted, animated, config-driven visitor counter for your GitHub profile.<br/>
-Booru-style catgirls holding your visit count. Because static counters are boring.
+  <img src="https://animated-catgirls.vercel.app/api/counter" width="425" alt="Animated Catgirl Counter" />
+</p>
+<p align="center">
+  <sub>Live demo counter powered by Vercel + Upstash Redis(Use Google Chrome)</sub>
 </p>
 
 ***
@@ -221,15 +221,6 @@ redeploy the page... you get a broken image 🐾
 
 ---
 
-## 🧠 Philosophy
-
-Static counters are fine.
-
-But if anime catgirls are going to announce your visitor count,  
-they might as well **wiggle their tails**. 🐾
-
----
-
 <h2 align="center">✨ Digit Gallery</h2>
 
 <p align="center">
@@ -248,5 +239,17 @@ they might as well **wiggle their tails**. 🐾
 <p align="center">
   <sub>The 10 animated digit sprites used to build the live counter</sub>
 </p>
+
+---
+
+## 🧠 Philosophy
+
+Static counters are fine.
+
+But if anime catgirls are going to announce your visitor count,  
+they might as well **wiggle their tails**. 🐾
+
+---
+
 
 > "I-it's not like I made an entire self-hosted counter just to flex or anything..." ✨
