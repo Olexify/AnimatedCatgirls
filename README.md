@@ -1,4 +1,4 @@
-# AnimatedCatgirls
+<h1 align="center">🐾 AnimatedCatgirls</h1>
 
 <img width="45" height="100" alt="0" src="https://github.com/user-attachments/assets/d0b116fe-8fa8-4bda-aa57-2576653407c9" />
 <img width="45" height="100" alt="1" src="https://github.com/user-attachments/assets/27cf5157-a926-4437-8ea5-7e2f706dd5f8" />
@@ -11,3 +11,230 @@
 <img width="45" height="100" alt="8" src="https://github.com/user-attachments/assets/98672b7e-885d-41aa-ab1a-884d4046fb9d" />
 <img width="45" height="100" alt="9" src="https://github.com/user-attachments/assets/9e3b0ece-51df-4aa2-978e-001a37344b60" />
 
+<p align="center">
+  <img src="https://animated-catgirls.vercel.app/api/counter" width="397" alt="Animated Catgirl Counter" />
+</p>
+
+<p align="center">
+A self-hosted, animated, config-driven visitor counter for your GitHub profile.<br/>
+Booru-style catgirls holding your visit count. Because static counters are boring.
+</p>
+
+***
+
+## 😼 What is this?
+
+`count.getloli.com` gives you a **static** anime counter.
+
+This gives you an **animated** one — your own catgirl GIFs, your own server, your own rules.
+
+```txt
+🚀 Loading AnimatedCatgirls.exe...
+
+[OK] Fetching visit count from Redis
+[OK] Padding number with catgirls
+[OK] Rendering SVG
+[WARN] Catgirls became self-aware (working as intended)
+```
+
+You host it yourself on Vercel, store the count in Upstash Redis, and tweak everything through one config file.
+
+---
+
+## ⚡ Features
+
+* 🐈 Animated digit GIFs (0–9) — bring your own art
+* ⚙️ Everything configurable via `counter.config.json`
+* 🎨 Opacity, brightness, contrast, saturation, shadow, scale, spacing
+* 🔢 Adjustable digit count
+* 📈 Counting modes: `strict`, `unique`, `aggressive`
+* ☁️ Fully self-hosted on Vercel (free tier)
+* 🧠 Count persisted in Upstash Redis (free tier)
+* 🔒 No third-party tracking
+
+---
+
+## 🛠️ How it works
+
+```txt
+GitHub README loads image
+        ↓
+Vercel runs api/counter.js
+        ↓
+Redis increments / reads the count
+        ↓
+Number gets padded → matched to digit GIFs
+        ↓
+GIFs fetched + embedded into one SVG
+        ↓
+Returned as image/svg+xml → catgirls appear
+```
+
+---
+
+## 📦 Project structure
+
+```txt
+AnimatedCatgirls/
+├── api/
+│   └── counter.js        ← the serverless function (JavaScript!)
+├── counter.config.json   ← all your settings (JSON!)
+├── package.json
+├── vercel.json
+└── README.md             ← you are here
+```
+
+> ⚠️ **Don't mix these up.** `counter.js` is JavaScript. `counter.config.json` is JSON.  
+> Pasting JSON into the `.js` file = instant 500 crash. Ask me how I know. 💀
+
+---
+
+## 🚀 Setup
+
+### 1) Get your digit assets 🎨
+
+You need 10 images or GIFs — one per digit `0`–`9`.
+
+Quick way: drag images into any GitHub issue/comment → GitHub gives you stable `user-attachments` URLs.
+
+Then map them in `api/counter.js`:
+
+```js
+const DIGITS = {
+  '0': 'https://github.com/user-attachments/assets/your-0-url',
+  '1': 'https://github.com/user-attachments/assets/your-1-url',
+  // ...
+  '9': 'https://github.com/user-attachments/assets/your-9-url'
+};
+```
+
+### 2) Create Upstash Redis 🗄️
+
+- Go to https://upstash.com → Create Redis DB (free tier)
+- Copy from the **REST API** section:
+  - `UPSTASH_REDIS_REST_URL`
+  - `UPSTASH_REDIS_REST_TOKEN`
+
+### 3) Deploy to Vercel ▲
+
+- Go to https://vercel.com/new → Import this repo
+- ⚠️ Set **Framework Preset → Other** (NOT Node.js)
+- Add env vars:
+
+| Name | Value |
+|---|---|
+| `UPSTASH_REDIS_REST_URL` | your Upstash REST URL |
+| `UPSTASH_REDIS_REST_TOKEN` | your Upstash REST token |
+
+- Deploy
+
+### 4) Test it
+
+Open:
+
+```txt
+https://your-project.vercel.app/api/counter
+```
+
+If you open `/` you’ll get a 404 — that’s normal. The endpoint is `/api/counter`.
+
+### 5) Embed it in your GitHub profile 🎀
+
+In your `USERNAME/USERNAME` profile README:
+
+```html
+<p align="center">
+  <img src="https://your-project.vercel.app/api/counter" width="397" />
+</p>
+```
+
+Want it closer to the classic getloli width? Try `width="460"`.
+
+---
+
+## ⚙️ Configuration (`counter.config.json`)
+
+Edit this file, push to GitHub, Vercel redeploys automatically.
+
+```json
+{
+  "counterKey": "counter:Olexify",
+  "digits": 6,
+  "style": {
+    "opacity": 0.85,
+    "brightness": 0.68,
+    "contrast": 1.25,
+    "saturate": 0.8,
+    "scale": 1,
+    "spacing": 0,
+    "offsetY": 0,
+    "shadowOpacity": 0.18,
+    "shadowBlur": 0.6,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 1,
+    "bgOpacity": 0,
+    "rounded": 0,
+    "bgColor": "#000000"
+  },
+  "counting": {
+    "mode": "strict",
+    "cooldownSeconds": 0,
+    "bump": 1
+  }
+}
+```
+
+### 🎨 Style options (quick reference)
+
+| Key | What it does |
+|---|---|
+| `opacity` | overall transparency |
+| `brightness` | darker / brighter (lower = darker) |
+| `contrast` | stronger outlines |
+| `saturate` | more/less color |
+| `scale` | size multiplier |
+| `spacing` | gap between digits |
+| `offsetY` | vertical nudge |
+| `shadowOpacity` / `shadowBlur` | getloli-ish depth |
+| `bgOpacity` / `bgColor` / `rounded` | optional background plate |
+
+### 🔢 Counting modes
+
+| Mode | Behavior |
+|---|---|
+| `strict` | +1 on every request (most aggressive) |
+| `unique` | +1 per IP per cooldown window |
+| `aggressive` | +`bump` per request |
+
+> 😐 **Counter feels sluggish on GitHub?** GitHub caches/proxies images.  
+> For testing, open `/api/counter` directly in your browser and refresh there.
+
+---
+
+## 🐛 Troubleshooting
+
+```txt
+99 little bugs in the counter, 99 little bugs 🎵
+Take one down, redeploy around... still a broken image 🐾
+```
+
+| Symptom | Fix |
+|---|---|
+| **"No entrypoint found"** | Vercel preset must be **Other**; function must be `api/counter.js` |
+| **500 FUNCTION_INVOCATION_FAILED** | Missing env vars, invalid JSON, or JSON pasted into `.js` → check Vercel logs |
+| **404 on `/`** | Normal — use `/api/counter` |
+| **Works in browser, broken on GitHub** | GitHub proxy is picky with some SVGs; try Markdown embed `![Counter](URL)` or simplify output |
+| **Count won't increase** | `unique` mode/cooldown active, or caching |
+
+---
+
+## 🧠 Philosophy
+
+Static counters are fine.
+
+But if anime catgirls are going to announce your visitor count,  
+they might as well **move**. 🐾
+
+---
+
+> "I-it's not like I made an entire self-hosted counter just to flex or anything..." ✨
