@@ -13,7 +13,7 @@
   <sub>Live demo counter powered by Vercel + Upstash Redis (Use Google Chrome)</sub>
 </p>
 
-<br>
+
 
 <p>
   <h2>😼 What is this?</h2>
@@ -264,7 +264,6 @@ they might as well **wiggle their tails**. 🐾
   <i>"I-it's not like I made an entire self-hosted counter just to flex or anything..." ✨</i>
 </p>
 
-<br>
 <br>
 
 <p align="center">
