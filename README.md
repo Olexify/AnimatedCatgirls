@@ -9,7 +9,7 @@
   <img src="https://animated-catgirls.vercel.app/api/counter" width="425" alt="Animated Catgirl Counter" />
 </p>
 <p align="center">
-  <sub>Live demo counter powered by Vercel + Upstash Redis(Use Google Chrome)</sub>
+  <sub>Live demo counter powered by Vercel + Upstash Redis (Use Google Chrome)</sub>
 </p>
 
 ***
@@ -180,7 +180,7 @@ Edit this file, push to GitHub, Vercel redeploys automatically.
 
 | Key | What it does |
 |---|---|
-| `opacity` | overall transparency |
+| `opacity` | overall transparency(broken) |
 | `brightness` | darker / brighter (lower = darker) |
 | `contrast` | stronger outlines |
 | `saturate` | more/less color |
@@ -189,6 +189,7 @@ Edit this file, push to GitHub, Vercel redeploys automatically.
 | `offsetY` | vertical nudge |
 | `shadowOpacity` / `shadowBlur` | getloli-ish depth |
 | `bgOpacity` / `bgColor` / `rounded` | optional background plate |
+| `animation speed` | I could not implement this, not for GIFs |
 
 ### 🔢 Counting modes
 
@@ -196,7 +197,7 @@ Edit this file, push to GitHub, Vercel redeploys automatically.
 |---|---|
 | `strict` | +1 on every request (this one's actually default logic, but caching won't let you +1 on every page refresh) |
 | `unique` | +1 per IP per cooldown window (If the IP hasn’t been seen in the last cooldownSeconds) |
-| `aggressive` | +`bump` for freaks who want to increase count with multiplier, visitors larping |
+| `aggressive` | +`bump` for freaks who want to increase count with bump multiplier x100500, visitor larping (or transfering data from other counter) |
 
 > 😐 **Counter feels sluggish on GitHub?** GitHub caches/proxies images.  
 > For testing, open `YOUR-PROJECT-NAME.vercel.app/api/counter` directly in your browser and refresh there.
