@@ -220,6 +220,21 @@ redeploy the page... you get a broken image 🐾
 | **Works in browser, broken on GitHub** | GitHub proxy is picky with some SVGs; try Markdown embed `![Counter](URL)` or simplify output |
 | **Count won't increase** | use `strict` mode, cooldown=0; the issue is caching |
 
+
+---
+
+## 🧠 Philosophy
+
+Static counters are fine.
+
+But if anime catgirls are going to announce your visitor count,  
+they might as well **wiggle their tails**. 🐾
+
+---
+
+
+> "I-it's not like I made an entire self-hosted counter just to flex or anything..." ✨
+
 ---
 
 <h2 align="center">✨ Digit Gallery</h2>
@@ -240,17 +255,3 @@ redeploy the page... you get a broken image 🐾
 <p align="center">
   <sub>The 10 animated digit sprites used to build the live counter</sub>
 </p>
-
----
-
-## 🧠 Philosophy
-
-Static counters are fine.
-
-But if anime catgirls are going to announce your visitor count,  
-they might as well **wiggle their tails**. 🐾
-
----
-
-
-> "I-it's not like I made an entire self-hosted counter just to flex or anything..." ✨
