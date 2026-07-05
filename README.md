@@ -34,7 +34,6 @@ You host it yourself on Vercel, store the count in Upstash Redis, and tweak ever
 ---
 
 <h2 align="center">✨ Digit Gallery</h2>
-
 <p align="center">
   <img width="40" height="89" alt="0" src="https://github.com/user-attachments/assets/d0b116fe-8fa8-4bda-aa57-2576653407c9" />
   <img width="40" height="89" alt="1" src="https://github.com/user-attachments/assets/27cf5157-a926-4437-8ea5-7e2f706dd5f8" />
@@ -47,7 +46,6 @@ You host it yourself on Vercel, store the count in Upstash Redis, and tweak ever
   <img width="40" height="89" alt="8" src="https://github.com/user-attachments/assets/98672b7e-885d-41aa-ab1a-884d4046fb9d" />
   <img width="40" height="89" alt="9" src="https://github.com/user-attachments/assets/9e3b0ece-51df-4aa2-978e-001a37344b60" />
 </p>
-
 <p align="center">
   <sub>The 10 animated digit sprites used to build the live counter</sub>
 </p>
@@ -271,5 +269,5 @@ they might as well **wiggle their tails**. 🐾
 </p>
 
 <p align="center">
-  <sub>The 10 animated digit sprites used to build the live counter</sub>
+  <sub>Made with meow??</sub>
 </p>
