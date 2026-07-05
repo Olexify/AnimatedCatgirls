@@ -1,4 +1,4 @@
-<h1 align="center">🐾 AnimatedCatgirls</h1>
+<h1 align="center">🐾 Animated Catgirls</h1>
 
 <p align="center">
   <i>A self-hosted, animated, config-driven visitor counter for your GitHub profile.</i><br/>
@@ -8,17 +8,26 @@
 <p align="center">
   <img src="https://animated-catgirls.vercel.app/api/counter" width="425" alt="Animated Catgirl Counter" />
 </p>
+
 <p align="center">
   <sub>Live demo counter powered by Vercel + Upstash Redis (Use Google Chrome)</sub>
 </p>
 
-***
+<br>
 
-## 😼 What is this?
+<p align="center">
+  <strong>😼 What is this?</strong>
+</p>
 
-`count.getloli.com` gives you a **static** anime counter.
+<p align="center">
+  <code>count.getloli.com</code> gives you a <b>static</b> anime counter.
+</p>
 
-This gives you an **animated** one - your own catgirl GIFs, your own server, your own rules.
+<p align="center">
+  This gives you an <b>animated</b> one - your own catgirl GIFs, your own server, your own rules.
+</p>
+
+<p align="center">
 
 ```txt
 🚀 Loading AnimatedCatgirls.exe...
@@ -29,11 +38,15 @@ This gives you an **animated** one - your own catgirl GIFs, your own server, you
 [WARN] Catgirls became self-aware (working as intended)
 ```
 
-You host it yourself on Vercel, store the count in Upstash Redis, and tweak everything through one config file.
+</p>
+
+<p align="center">
+  You host it yourself on Vercel, store the count in Upstash Redis, and tweak everything through one config file.
+</p>
 
 ---
 
-<h3 align="center"><i>✨ Digit Gallery</i></h3>
+<p align="center"><strong><i>✨ Digit Gallery</i></strong></p>
 <p align="center">
   <img width="40" height="89" alt="0" src="https://github.com/user-attachments/assets/d0b116fe-8fa8-4bda-aa57-2576653407c9" />
   <img width="40" height="89" alt="1" src="https://github.com/user-attachments/assets/27cf5157-a926-4437-8ea5-7e2f706dd5f8" />
