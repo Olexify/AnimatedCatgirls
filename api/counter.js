@@ -15,25 +15,41 @@ const DIGITS = {
   '6': 'https://github.com/user-attachments/assets/cd61ec35-48ec-4235-b3dd-9cbc4f3fbbba',
   '7': 'https://github.com/user-attachments/assets/191aa33e-b23c-42d0-afa5-9719a6989915',
   '8': 'https://github.com/user-attachments/assets/98672b7e-885d-41aa-ab1a-884d4046fb9d',
-  '9': 'https://github.com/user-attachments/assets/9e3b0ece-51df-4aa2-978e-021a37344b60',
+  '9': 'https://github.com/user-attachments/assets/9e3b0ece-51df-4aa2-978e-001a37344b60',
 };
 
 export default async function handler(req, res) {
-  const count = await redis.incr('counter:Olexify');
-  const digits = String(count).padStart(6, '0').split('');
-  const W = 45, H = 100;
-  const totalWidth = digits.length * W;
+  try {
+    const count = await redis.incr('counter:Olexify');
+    const digits = String(count).padStart(6, '0').split('');
+    const W = 45;
+    const H = 100;
+    const totalWidth = digits.length * W;
 
-  const images = await Promise.all(digits.map(async (d, i) => {
-    const imgRes = await fetch(DIGITS[d]);
-    const buf = Buffer.from(await imgRes.arrayBuffer());
-    const b64 = buf.toString('base64');
-    return `<image x="${i * W}" y="0" width="${W}" height="${H}" href="data:image/gif;base64,${b64}" />`;
-  }));
+    const images = await Promise.all(
+      digits.map(async (d, i) => {
+        const imgRes = await fetch(DIGITS[d]);
+        const arrayBuffer = await imgRes.arrayBuffer();
+        const b64 = Buffer.from(arrayBuffer).toString('base64');
+        return `<image x="${i * W}" y="0" width="${W}" height="${H}" href="data:image/gif;base64,${b64}" />`;
+      })
+    );
 
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="${totalWidth}" height="${H}">${images.join('')}</svg>`;
+    const svg = `
+      <svg xmlns="http://www.w3.org/2000/svg" width="${totalWidth}" height="${H}" viewBox="0 0 ${totalWidth} ${H}">
+        ${images.join('')}
+      </svg>
+    `;
 
-  res.setHeader('Content-Type', 'image/svg+xml');
-  res.setHeader('Cache-Control', 'no-cache, max-age=0');
-  res.send(svg);
+    res.setHeader('Content-Type', 'image/svg+xml');
+    res.setHeader('Cache-Control', 'no-store');
+    res.status(200).send(svg);
+  } catch (err) {
+    res.setHeader('Content-Type', 'image/svg+xml');
+    res.status(500).send(`
+      <svg xmlns="http://www.w3.org/2000/svg" width="300" height="40">
+        <text x="10" y="25" font-size="20">counter error</text>
+      </svg>
+    `);
+  }
 }
