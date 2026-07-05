@@ -10,9 +10,9 @@
     "spacing": 0,
     "offsetY": 0,
     "shadowOpacity": 0.58,
-    "shadowBlur": 0.6,
-    "shadowOffsetX": 3.5,
-    "shadowOffsetY": 5.5,
+    "shadowBlur": 0.7,
+    "shadowOffsetX": 2.5,
+    "shadowOffsetY": 3.5,
     "bgOpacity": 0,
     "rounded": 0,
     "bgColor": "#000000"
