@@ -33,7 +33,7 @@ You host it yourself on Vercel, store the count in Upstash Redis, and tweak ever
 
 ---
 
-<h3 align="center">✨ Digit Gallery</h3>
+<h3 align="center"><i>✨ Digit Gallery</i></h3>
 <p align="center">
   <img width="40" height="89" alt="0" src="https://github.com/user-attachments/assets/d0b116fe-8fa8-4bda-aa57-2576653407c9" />
   <img width="40" height="89" alt="1" src="https://github.com/user-attachments/assets/27cf5157-a926-4437-8ea5-7e2f706dd5f8" />
@@ -47,7 +47,7 @@ You host it yourself on Vercel, store the count in Upstash Redis, and tweak ever
   <img width="40" height="89" alt="9" src="https://github.com/user-attachments/assets/9e3b0ece-51df-4aa2-978e-001a37344b60" />
 </p>
 <p align="center">
-  <sub>The 10 animated digit sprites used to build the live counter</sub>
+  <sub><i>The 10 animated digit sprites used to build the live counter</i></sub>
 </p>
 
 ---
@@ -251,9 +251,12 @@ they might as well **wiggle their tails**. 🐾
 
 ---
 
+<p align="center">
+  <i>"I-it's not like I made an entire self-hosted counter just to flex or anything..." ✨</i>
+</p>
 
-> "I-it's not like I made an entire self-hosted counter just to flex or anything..." ✨
-
+<br>
+<br>
 
 <p align="center">
   <img width="40" height="89" alt="0" src="https://github.com/user-attachments/assets/d0b116fe-8fa8-4bda-aa57-2576653407c9" />
@@ -269,5 +272,5 @@ they might as well **wiggle their tails**. 🐾
 </p>
 
 <p align="center">
-  <sub>Wdym made with meow??</sub>
+  <sub><i>Wdym made with meow??</i></sub>
 </p>
