@@ -7,6 +7,7 @@ const redis = new Redis({
   token: process.env.UPSTASH_REDIS_REST_TOKEN,
 });
 
+// OPTION A — use GitHub user-attachments URLs
 const DIGITS = {
   '0': 'https://github.com/user-attachments/assets/d0b116fe-8fa8-4bda-aa57-2576653407c9',
   '1': 'https://github.com/user-attachments/assets/27cf5157-a926-4437-8ea5-7e2f706dd5f8',
@@ -19,6 +20,22 @@ const DIGITS = {
   '8': 'https://github.com/user-attachments/assets/98672b7e-885d-41aa-ab1a-884d4046fb9d',
   '9': 'https://github.com/user-attachments/assets/9e3b0ece-51df-4aa2-978e-001a37344b60',
 };
+
+/*
+// OPTION B — use local repo files in folder, Example folder name  "ActiveGifs"
+const DIGITS = {
+  '0': '/ActiveGifs/0.gif',
+  '1': '/ActiveGifs/1.gif',
+  '2': '/ActiveGifs/2.gif',
+  '3': '/ActiveGifs/3.gif',
+  '4': '/ActiveGifs/4.gif',
+  '5': '/ActiveGifs/5.gif',
+  '6': '/ActiveGifs/6.gif',
+  '7': '/ActiveGifs/7.gif',
+  '8': '/ActiveGifs/8.gif',
+  '9': '/ActiveGifs/9.gif',
+};
+*/
 
 function clamp(n, min, max) {
   return Math.min(Math.max(n, min), max);
