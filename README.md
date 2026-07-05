@@ -235,7 +235,6 @@ they might as well **wiggle their tails**. 🐾
 
 > "I-it's not like I made an entire self-hosted counter just to flex or anything..." ✨
 
----
 
 <h2 align="center">✨ Digit Gallery</h2>
 
